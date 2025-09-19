@@ -1,0 +1,9 @@
+pm_api_url      = "https://pve01:8006/"
+pm_token_id     = "terraform@pve!tf"
+pm_token_secret = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+node            = "pve01"
+datastore       = "local-lvm"
+bridge          = "vmbr0"
+template_id     = 9000
+vm_name         = "dev-01"
+ssh_pubkey_path = "~/.ssh/id_ed25519.pub"
