@@ -1,6 +1,6 @@
-pm_api_url      = "https://pve01:8006/"
+pm_api_url      = "https://192.168.8.108:8006/"
 pm_token_id     = "terraform@pve!tf"
-pm_token_secret = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+pm_token_secret = "a897d2e0-5fe9-4540-82cb-77ff328dcfb2"
 node            = "pve01"
 datastore       = "local-lvm"
 bridge          = "vmbr0"
