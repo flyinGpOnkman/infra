@@ -1,6 +1,6 @@
 resource "proxmox_virtual_environment_vm" "debian13" {
   name      = "debian13-tf"
-  node_name = "pve01"
+  node_name = "01"
   tags      = ["terraform", "debian13"]
 
   clone {
