@@ -1,20 +1,14 @@
 resource "proxmox_virtual_environment_vm" "debian13" {
   name      = "debian13-tf"
   node_name = "pve01"
-  tags      = ["terraform","debian13"]
+  tags      = ["terraform", "debian13"]
 
   clone {
     vm_id = 9999
   }
 
-  cpu {
-    sockets = 1
-    cores   = 2
-  }
-
-  memory {
-    dedicated = 2048
-  }
+  cpu { sockets = 1, cores = 2 }
+  memory { dedicated = 2048 }
 
   disk {
     datastore_id = "local-lvm"
@@ -32,20 +26,16 @@ resource "proxmox_virtual_environment_vm" "debian13" {
 
     user_account {
       username = "admin"
-      password = "SuperSecret123!"
+      password = "popopopopopo"
     }
 
     ip_config {
-      ipv4 {
-        address = "dhcp"
-      }
+      ipv4 { address = "dhcp" }
     }
 
+    hostname = "debian13-tf"
   }
 
-  agent {
-    enabled = true
-  }
-
+  agent   { enabled = true }
   started = true
 }
