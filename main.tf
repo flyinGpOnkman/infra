@@ -41,7 +41,6 @@ resource "proxmox_virtual_environment_vm" "debian13" {
       }
     }
 
-    hostname = "debian13-tf"
   }
 
   agent {
