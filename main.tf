@@ -4,11 +4,17 @@ resource "proxmox_virtual_environment_vm" "debian13" {
   tags      = ["terraform", "debian13"]
 
   clone {
-    vm_id = 9999
-  }
+  vm_id = 9999
+}
 
-  cpu { sockets = 1, cores = 2 }
-  memory { dedicated = 2048 }
+cpu {
+  sockets = 1
+  cores   = 2
+}
+
+memory {
+  dedicated = 2048
+}
 
   disk {
     datastore_id = "local-lvm"
