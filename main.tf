@@ -33,7 +33,7 @@ resource "proxmox_virtual_environment_vm" "debian13" {
       ipv4 { address = "dhcp" }
     }
 
-    hostname = "debian13-tf"
+
   }
 
   agent   { enabled = true }
